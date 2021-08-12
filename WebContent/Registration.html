@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       
+       body{
+           margin: 0%;
+           padding: 0%;
+           background-color: lavender;
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+       }
+       .div1{
+           margin: 50px 300px;
+           padding: 50px;
+           background-color: dodgerblue;
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+       }
+       .div1 h2{
+           color: floralwhite;
+        margin: 0 0 10px 0;
+        font-weight: 300;
+        font-size: 28px;
+       }
+       .div1 .t1, .t2, .t3, .t4, .t5, .t6{
+           display: block;
+           box-sizing: border-box;
+           margin-bottom: 20px;
+           padding: 4px;
+           width: 220px;
+           height: 32px;
+           border: none;
+           border-bottom: dodgerblue;
+           font-family: 'Roboto', sans-serif;
+           font-weight: 400;
+           font-size: 15px;
+           transition: 0.2s ease;
+       }
+       .div1 .s1{
+           margin: 10px 0px;
+           height: 40px;
+           width: 150px;
+           font-size: 18px;
+           font-weight: bold;
+           color: floralwhite;
+           background-color: rgb(73, 82, 73);
+       }
+      
+       
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="div1">
+        
+    
+       <h2>Register</h2>
+        <form action="Registration.jsp" method="post">
+        <input class="t1" type="text" placeholder="Fullname" name="fname" required><br>
+        <input class="t2" type="text" placeholder="E-mail" name="email" required pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"><br>
+        <input class="t3" type="password" placeholder="Password" name="pass1" required><br>
+        <input class="t5" type="text" placeholder="Phone no" name="phone" required><br>
+        <input class="t6" type="text" placeholder="City" name="city" required><br>
+        <a href="Registration.html"><input class="s1" type="submit" value="Register"></a>
+        If Already register <a href="logindesign.jsp">Click Here</a>
+        </form>
+    
+         
+    </div>
+</body>
+</html>

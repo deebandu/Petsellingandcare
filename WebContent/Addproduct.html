@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       
+   
+        .head{
+           color: #4e657a;
+           text-align:center;
+           margin: 0 0 10px 0;
+           font-weight: bold;
+           font-size: 32px;
+       }
+       .details{
+         margin-top: 110px;
+         margin-bottom: 50px;
+         background: rgb(204, 194, 194);
+         padding: 50px 50px;
+       }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Add Product</title>
+</head>
+<body style="background-color:#4e657a">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand ml-4" href="#">DogZilla</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-4">
+                    <a class="nav-link" href="Addproduct.html">Add Products</a>
+                  </li>
+                <li class="nav-item mr-4">
+                  <a class="nav-link " href="DProduct.jsp">Product Details</a>
+                </li>
+                <li class="nav-item mr-3">
+                  <a class="nav-link " href="CustomerDetails.jsp">Customer Detalis</a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link " href="#">View Feedback</a>
+                  </li>   
+                  <li class="nav-item mr-4">
+                    <a class="nav-link " href="DeliveryReport.jsp">Delivery Report</a>
+                  </li>   
+                  <a class="nav-link " href="Logout.jsp">
+                    <button style="
+                    padding: 0px 5px;
+                    font-size: 15px;
+                    color: floralwhite;
+                    background-color: rgb(73, 82, 73);">Logout</button>
+                  </a>
+                <li class="nav-item m4-5">
+                    <form class="form-inline" action="/action_page.php">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                      </form>
+                    
+                </li> 
+              </ul>
+            </div>  
+          </nav> 
+
+
+    <div class="container details" >
+        <h2 class="head">Add Products</h2>
+        <form action="Addproduct.jsp" method="post">
+        <div class="form-group"> 
+         <label for="formGroupExampleInput">Product Name</label> 
+        <input class="form-control" type="text" placeholder="name" name="pname" required>
+       </div>
+        <div class="form-group"> 
+         <label for="formGroupExampleInput">Product Price</label> 
+        <input class="form-control" type="text" placeholder="Price" name="price" required>
+       </div>
+         <div class="form-group"> 
+         <label for="formGroupExampleInput">Product Info</label> 
+        <input class="form-control" type="text" placeholder="Information" name="info" required>
+       </div>
+        <div class="form-group"> 
+         <label for="formGroupExampleInput">Product Category</label> 
+       <select class="form-control" name="catg" class="t1" placeholder="Category" required>
+         <option value="Dog">Dog</option>
+        <option value="Food Product">Food Product</option>
+        <option value="Accessories">Accessories</option>
+        </select>
+       </div>
+       <div class="form-group"> 
+         <label for="formGroupExampleInput">Product Image</label> 
+        <input class="form-control" type="text" placeholder="Image" name="img" required>
+       </div>
+       <div class="form-group"> 
+         <label for="formGroupExampleInput">Product Quantity</label> 
+        <input class="form-control" type="text" placeholder="Quentity" name="qty" required>
+       </div>
+       <br>
+          <input type="submit" value="Add Product" style="position: absolute;left:50%;transform: translate(-50%,0);" onclick="func()">  
+     
+        </form>
+    </div>
+    
+   
+</body>
+</html>
